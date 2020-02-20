@@ -1,0 +1,119 @@
+body {
+  background-image: url("./images/image-9.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+table {
+  width: 20%;
+  margin: 100px 500px;
+}
+
+.title-text {
+  border: 2px solid orange;
+  width: 100%;
+  text-align: center;
+  color: orange;
+  background-color: orange;
+  font-size: 30px;
+  color: white;
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  color: orange;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 30px;
+  background-color: orange;
+  color: white;
+}
+
+input[type="text"] {
+  background-color: white;
+  width: 100%;
+  border: 2px solid black;
+}
+
+input[type="button"] {
+  /* background-color: royalblue;    */
+  color: white;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.btnNum {
+  height: 50px;
+  background-color: black;
+}
+
+.btnAl {
+  height: 50px;
+  background-color: teal;
+}
+
+.btnAl:hover {
+  background-color: lightseagreen;
+}
+
+.btnNum:hover {
+  background-color: #a9a9a9;
+}
+
+.btnOp {
+  height: 50px;
+  background-color: grey;
+}
+
+.btnOp:hover {
+  background-color: lightgrey;
+}
+
+.btnSol {
+  height: 50px;
+  background-color: green;
+}
+
+.btnSol:hover {
+  background-color: lightgreen;
+}
+
+.btnClr {
+  height: 50px;
+  background-color: red;
+}
+
+.btnClr:hover {
+  background-color: tomato;
+}
+
+.btnMath {
+  height: 50px;
+  background-color: brown;
+}
+
+.btnMath:hover {
+  background-color: tomato;
+}
+
+.Uptext {
+  height: 45px;
+}
+
+.del {
+  height: 50px;
+  background-color: blue;
+}
+
+.del:hover {
+  background-color: lightblue;
+}
+
+td {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  border: 1px solid white;
+}

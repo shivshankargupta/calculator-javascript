@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+   
+
+
+</head>
+<body>
+  <div id="main">
+    <div class="title">Simple Calculater Using JavaScript</div>
+
+    <table border="1">
+        <tr>
+            <td colspan="3"><input type="text" class="Uptext" id="result"></td>
+            <td><input type="button" value="AC" class="btnClr" onclick="clr()"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" class="btnNum" onclick="d('1')"></td>
+            <td><input type="button" value="2" class="btnNum" onclick="d('2')"></td>
+            <td><input type="button" value="3" class="btnNum" onclick="d('3')"></td>
+            <td><input type="button" value="/" class="btnOp" onclick="d('/')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" class="btnNum" onclick="d('4')"></td>
+            <td><input type="button" value="5" class="btnNum" onclick="d('5')"></td>
+            <td><input type="button" value="6" class="btnNum" onclick="d('6')"></td>
+            <td><input type="button" value="-" class="btnOp" onclick="d('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="7" class="btnNum" onclick="d('7')"></td>
+            <td><input type="button" value="8" class="btnNum" onclick="d('8')"></td>
+            <td><input type="button" value="9" class="btnNum" onclick="d('9')"></td>
+            <td><input type="button" value="+" class="btnOp" onclick="d('+')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="." class="btnOp" onclick="d('.')"></td>
+            <td><input type="button" value="0" class="btnNum" onclick="d('0')"></td>
+            <td><input type="button" value="=" class="btnSol" onclick="solve()"></td>
+            <td><input type="button" value="*" class="btnOp" onclick="d('*')"></td>
+        </tr>
+
+    </table>
+</div>
+
+
+<script>
+   //Display the Value
+   function d(val) {
+            document.getElementById("result").value += val;
+        }
+
+        //function Solve the Data Values
+        function solve() {
+            let data = document.getElementById("result").value;
+            let res = eval(data);
+            document.getElementById("result").value = res;
+        }
+
+        //function that clear the Value that (clr function must be same name with the call.)
+        function clr() {
+            document.getElementById("result").value = " ";
+        }
+</script>
+</body>
+</html>
